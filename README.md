@@ -14,3 +14,5 @@ To achieve the output we have used the pretrained model from Wav2Lip, more speci
 2. The next error which occured was due to the fact that the mel() function in the audio.py file only took two positional arguments, however when we ran the code mentioned in the guide, 3 arguments were being passed to the mel() function which threw an error. This was fixed using the solution mentioned in this discussion [thread](https://github.com/Rudrabha/Wav2Lip/issues/471).
 3. The third and last problem faced was that the model is limited to a video and audio of 7seconds only. As such to dub an entire video we have to chop it down and string it up together again to get our desired output. Due to this limitation I have only tried using the first 7 seconds of the video clip pertaining to the time constraints of the assignment.
 
+##Solution:
+The final google collab notebook after solving all of the above problems can be found [here](https://colab.research.google.com/drive/1vfo3NH2EAX9eoqUqnYX5SlyaWcHEgI8R?usp=sharing)
