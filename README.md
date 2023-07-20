@@ -17,5 +17,15 @@ To achieve the output we have used the pretrained model from Wav2Lip, more speci
 ## Solution:
 The final google collab notebook after solving all of the above problems can be found [here](https://colab.research.google.com/drive/1vfo3NH2EAX9eoqUqnYX5SlyaWcHEgI8R?usp=sharing)
 
+## How to run the model:
+The model can be run by executing the cells one by one in the notebook Listed_Wav2Lip.ipynb. 
+Apart from that the general process is as follows:
+1. Mount Google Drive or make sure to be in the same directory as your input and output files. Also make sure to keeo the path to your model handy.
+2. Clone the Wav2Lip repo and run the requirements.txt file to install all the requirements and necessary packages.
+3. Navigate to checkpoints.py file and keep it handy.
+4. Update the librosa library to 0.8.0
+5. Run the inference.py file by giving the checkpoints, audio and face arguments respectively which would your checkpoints.py file, your video file and your audio file.
+6. The result can then be found in the results directory.
+
 ## How to Evaluate the performace:
 The model performance can be evaluated by the quality of the lipsync video obtained.
